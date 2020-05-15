@@ -1,0 +1,5 @@
+/* CSS for AudioPlayerXBlock */
+
+.audioplayer_block p {
+    cursor: pointer;
+}

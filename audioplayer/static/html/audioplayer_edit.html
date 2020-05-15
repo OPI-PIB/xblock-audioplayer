@@ -1,0 +1,60 @@
+{% load i18n %}
+<div class="wrapper-comp-settings editor-with-buttons is-active"
+     id="settings-tab">
+    <ul class="list-input settings-list">
+
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label"
+                       for="display_name">{% trans "Display Name" %}</label>
+                <input class="input setting-input"
+                       id="display_name" type="text"
+                       value="{{ display_name }}">
+            </div>
+        </li>
+
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label"
+                       for="mp3_url">{% trans "URL to mp3 file" %}</label>
+                <input class="input setting-input" id="mp3_url"
+                       type="text" value="{{ mp3_url }}">
+                <br/><br/>
+                <label class="label setting-label"
+                       for="mp3_file">{% trans "Send a mp3 file" %}</label>
+                <input type="file" class="upload_file input setting-input"
+                       accept=".mp3" name="mp3_file">
+            </div>
+        </li>
+
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label"
+                       for="vtt_url">{% trans "URL to VTT file" %}</label>
+                <input class="input setting-input" id="vtt_url"
+                       type="text" value="{{ vtt_url }}">
+                <br/><br/>
+                <label class="label setting-label"
+                       for="mp3_url">{% trans "Send a VTT file" %}</label>
+                <input type="file" class="upload_file input setting-input"
+                       accept=".vtt,.txt" name="vtt_file">
+            </div>
+        </li>
+
+    </ul>
+
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a class="button action-primary action-save"
+                   href="#">{% trans "Save" %}</a>
+            </li>
+            <li class="action-item">
+                <a class="button action-cancel"
+                   href="#">{% trans "Cancel" %}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

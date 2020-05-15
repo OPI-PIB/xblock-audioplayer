@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-15 13:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: audioplayer.py:25 static/html/audioplayer_edit.html:9
+msgid "Display Name"
+msgstr ""
+
+#: audioplayer.py:26
+msgid "Audio Player"
+msgstr ""
+
+#: audioplayer.py:30
+msgid "MP3 URL"
+msgstr ""
+
+#: audioplayer.py:35
+msgid "VVT Subtitles URL"
+msgstr ""
+
+#: audioplayer.py:216
+msgid "Dummy"
+msgstr ""
+
+#: static/html/audioplayer.html:5
+msgid "Your browser does not support the audio tag."
+msgstr ""
+
+#: static/html/audioplayer_edit.html:19
+msgid "URL to mp3 file"
+msgstr ""
+
+#: static/html/audioplayer_edit.html:24
+msgid "Send a mp3 file"
+msgstr ""
+
+#: static/html/audioplayer_edit.html:33
+msgid "URL to VTT file"
+msgstr ""
+
+#: static/html/audioplayer_edit.html:38
+msgid "Send a VTT file"
+msgstr ""
+
+#: static/html/audioplayer_edit.html:50
+msgid "Save"
+msgstr ""
+
+#: static/html/audioplayer_edit.html:54
+msgid "Cancel"
+msgstr ""

@@ -1,0 +1,10 @@
+{% load i18n %}<div class="audioplayer_block">
+    <p>
+        <audio id="audiofile" controls>
+            <source src="{{ mp3_url }}" type="audio/mpeg">
+            {% trans "Your browser does not support the audio tag." %}
+        </audio>
+        <div id="subtitles"></div>
+    <input type="hidden" id="subtitles_url" value="{{ vtt_url }}">
+    </p>
+</div>
