@@ -3,3 +3,7 @@
 .audioplayer_block p {
     cursor: pointer;
 }
+
+.audioplayer_block audio{
+    width: 100% !important;
+}
