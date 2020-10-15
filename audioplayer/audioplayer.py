@@ -159,7 +159,8 @@ class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock):
 
         url = AUDIO_UPLOAD_URL + new_filename
 
-        resp = requests.put(url, data=File(upload.file))
+        headers = {'Content-Type': 'audio/mpeg'}
+        resp = requests.put(url, data=File(upload.file), headers=headers)
 
         response_data = ''
         if resp.status_code == 200:
