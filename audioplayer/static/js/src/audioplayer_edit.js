@@ -13,6 +13,10 @@ function AudioPlayerXBlockStudio(runtime, element) {
         var key = $(this).attr("name");
         fd.append("key", key);
 
+        var form = $(this).parent().parent();
+        var ct = $("input[name=content_type]",form).val();
+        fd.append("ct", ct);
+
         $.ajax({
             url: runtime.handlerUrl(element, 'save_file'),
             type: 'post',
@@ -22,7 +26,7 @@ function AudioPlayerXBlockStudio(runtime, element) {
             success: function (response) {
                 if (response != 0) {
                     alert(response['result']);
-                    $("#" + key.replace("_file", "_url")).val(response['url'])
+                    $("#" + key.replace("_file", "_url")).val(response['url']);
                 } else {
                     alert('file not uploaded');
                 }

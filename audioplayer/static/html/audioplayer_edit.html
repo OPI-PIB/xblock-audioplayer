@@ -19,6 +19,7 @@
                        for="mp3_url">{% trans "URL to mp3 file" %}</label>
                 <input class="input setting-input" id="mp3_url"
                        type="text" value="{{ mp3_url }}">
+                <input name="content_type" type="hidden" value="audio/mpeg">
                 <br/><br/>
                 <label class="label setting-label"
                        for="mp3_file">{% trans "Send a mp3 file" %}</label>
@@ -33,6 +34,7 @@
                        for="vtt_url">{% trans "URL to VTT file" %}</label>
                 <input class="input setting-input" id="vtt_url"
                        type="text" value="{{ vtt_url }}">
+                <input name="content_type" type="hidden" value="text/plain">
                 <br/><br/>
                 <label class="label setting-label"
                        for="mp3_url">{% trans "Send a VTT file" %}</label>

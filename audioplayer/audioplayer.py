@@ -37,7 +37,7 @@ class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock, CompletableXBlockMixin)
                      help="")
 
     vtt_url = String(display_name=_("VVT Subtitles URL"),
-                     default="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/opiopc/b/opi_audio/o/vtt_file/0549e68f-e323-481b-b6e4-d0e3d9984d25",
+                     default="",
                      scope=Scope.content,
                      help="")
 
@@ -152,17 +152,15 @@ class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock, CompletableXBlockMixin)
         """
         upload = request.params['file']
 
-        # upload.file.name
-        print(request.params['key'])
-
         new_filename = request.params['key'] + "/" + str(uuid.uuid4())
 
         AUDIO_UPLOAD_URL = self.get_xblock_settings()['AUDIO_UPLOAD_URL']
-        AUDIO_URL = self.get_xblock_settings()['AUDIO_URL']
+        AUDIO_URL = self.get_xblock_settings().get('AUDIO_URL',
+                                                   'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/opiopc/b/opi_audio/o/')
 
         url = AUDIO_UPLOAD_URL + new_filename
 
-        headers = {'Content-Type': 'audio/mpeg'}
+        headers = {'Content-Type': request.params['ct']}
         resp = requests.put(url, data=File(upload.file), headers=headers)
 
         response_data = ''
