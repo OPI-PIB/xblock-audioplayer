@@ -36,7 +36,7 @@ class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock, CompletableXBlockMixin)
                      scope=Scope.content,
                      help="")
 
-    vtt_url = String(display_name=_("VVT Subtitles URL"),
+    vtt_url = String(display_name=_("VTT Subtitles URL"),
                      default="",
                      scope=Scope.content,
                      help="")
