@@ -30,8 +30,8 @@ msgid "MP3 URL"
 msgstr "Adres do pliku mp3"
 
 #: audioplayer.py:35
-msgid "VVT Subtitles URL"
-msgstr "Adres do pliku VVT"
+msgid "VTT Subtitles URL"
+msgstr "Adres do pliku VTT"
 
 #: audioplayer.py:216
 msgid "Dummy"
@@ -51,11 +51,11 @@ msgstr "Wyślij plik mp3"
 
 #: static/html/audioplayer_edit.html:33
 msgid "URL to VTT file"
-msgstr "Adres do pliku VVT"
+msgstr "Adres do pliku VTT"
 
 #: static/html/audioplayer_edit.html:38
 msgid "Send a VTT file"
-msgstr "Wyślij plik VVT"
+msgstr "Wyślij plik VTT"
 
 #: static/html/audioplayer_edit.html:50
 msgid "Save"

@@ -30,7 +30,7 @@ msgid "MP3 URL"
 msgstr ""
 
 #: audioplayer.py:35
-msgid "VVT Subtitles URL"
+msgid "VTT Subtitles URL"
 msgstr ""
 
 #: audioplayer.py:216
