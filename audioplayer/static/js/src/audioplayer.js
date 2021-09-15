@@ -9,7 +9,7 @@ function AudioPlayerXBlock(runtime, element) {
         var options = {
             audioPlayer: audioPlayer,
             subtitlesContainer: subtitles,
-            subtitlesFile: $("#subtitles_url").val()
+            subtitlesFile: $("#subtitles_url", element).val()
         };
 
         audioSync(
