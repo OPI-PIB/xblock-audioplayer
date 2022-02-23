@@ -22,7 +22,7 @@ def package_data(pkg, roots):
 
 setup(
     name='audioplayer-xblock',
-    version='0.1.5',
+    version='0.1.6',
     description='Navoica Audio Player XBlock',
     license='UNKNOWN',
     packages=[

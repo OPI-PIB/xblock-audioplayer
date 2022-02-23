@@ -12,7 +12,6 @@ from xblock.fields import Scope, String
 from xblock.fragment import Fragment
 from xblockutils.resources import ResourceLoader
 from xblockutils.settings import XBlockWithSettingsMixin
-from xblock.completable import XBlockCompletionMode, CompletableXBlockMixin
 
 _ = lambda text: text
 loader = ResourceLoader(__name__)
@@ -20,11 +19,9 @@ loader = ResourceLoader(__name__)
 
 @XBlock.needs('settings')
 @XBlock.needs('i18n')
-class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock, CompletableXBlockMixin):
+class AudioPlayerXBlock(XBlockWithSettingsMixin, XBlock):
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
-
-    completion_mode = XBlockCompletionMode.COMPLETABLE
 
     display_name = String(display_name=_("Display Name"),
                           default=_("Audio Player"),
