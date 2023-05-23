@@ -5,4 +5,4 @@ Mako==1.0.7
 transifex-client==0.13.4
 path.py==8.2.1
 django-appconf==1.0.2
-requests==2.9.1
+requests==2.31.0
